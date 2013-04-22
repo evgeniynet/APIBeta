@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{342A3B1F-D884-4A51-A031-313AC0D56EBC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SherpaDeskApi</RootNamespace>
+    <AssemblyName>SherpaDeskApi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44306</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DeployEncryptKey>Encryption password is used only if any deployment setting is marked as secure</DeployEncryptKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="lib.bwa.bigWebDesk.bll, Version=10.2.1.3535, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\lib.bwa.bigWebDesk.bll.dll</HintPath>
+    </Reference>
+    <Reference Include="lib.bwa.bigWebDesk.dal, Version=10.2.1.3535, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\lib.bwa.bigWebDesk.dal.dll</HintPath>
+    </Reference>
+    <Reference Include="Micajah.Common3, Version=3.0.4746.30644, Culture=neutral, PublicKeyToken=045979187a9f4eec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin Shared\Micajah.Common3.dll</HintPath>
+    </Reference>
+    <Reference Include="Micajah.FileService, Version=1.0.4839.23551, Culture=neutral, PublicKeyToken=db54874c27934326, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Micajah.FileService.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack, Version=3.9.42.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=3.9.42.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=3.9.42.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.ServiceInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ServiceStack.ServiceInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=3.9.42.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\ApiRequest.cs" />
+    <Compile Include="classes\ApiUser.cs" />
+    <Compile Include="classes\Models\Account.cs" />
+    <Compile Include="classes\Models\Accounts.cs" />
+    <Compile Include="classes\Models\Asset.cs" />
+    <Compile Include="classes\Models\Assets.cs" />
+    <Compile Include="classes\Models\Class.cs" />
+    <Compile Include="classes\Models\Classes.cs" />
+    <Compile Include="classes\Models\Article.cs" />
+    <Compile Include="classes\Models\Articles.cs" />
+    <Compile Include="classes\Models\CommonTimeLog.cs" />
+    <Compile Include="classes\Models\FBClients.cs" />
+    <Compile Include="classes\Models\FBModel.cs" />
+    <Compile Include="classes\Models\FBProjects.cs" />
+    <Compile Include="classes\Models\FBStaffs.cs" />
+    <Compile Include="classes\Models\FBTasks.cs" />
+    <Compile Include="classes\Models\FBTimeEntries.cs" />
+    <Compile Include="classes\Models\File.cs" />
+    <Compile Include="classes\Models\Files.cs" />
+    <Compile Include="classes\Models\Reports.cs" />
+    <Compile Include="classes\Models\Knowledgebase.cs" />
+    <Compile Include="classes\Models\TicketsCount.cs" />
+    <Compile Include="classes\Models\TimeLog.cs" />
+    <Compile Include="classes\Models\TicketTimeLogs.cs" />
+    <Compile Include="classes\Models\ProjectDetail.cs" />
+    <Compile Include="classes\Models\Project.cs" />
+    <Compile Include="classes\Models\Projects.cs" />
+    <Compile Include="classes\Models\ProjectTimeLog.cs" />
+    <Compile Include="classes\Models\Todo.cs" />
+    <Compile Include="classes\Models\Todos.cs" />
+    <Compile Include="classes\Models\Invoice.cs" />
+    <Compile Include="classes\Models\Invoices.cs" />
+    <Compile Include="classes\Models\Instance.cs" />
+    <Compile Include="classes\Models\InstanceConfig.cs" />
+    <Compile Include="classes\Models\Level.cs" />
+    <Compile Include="classes\Models\Levels.cs" />
+    <Compile Include="classes\Models\ModelItemBase.cs" />
+    <Compile Include="classes\Models\ModelItemBaseInterface.cs" />
+    <Compile Include="classes\Models\ModelItemCollectionGeneric.cs" />
+    <Compile Include="classes\Models\Organization.cs" />
+    <Compile Include="classes\Models\Priorities.cs" />
+    <Compile Include="classes\Models\Priority.cs" />
+    <Compile Include="classes\Models\TaskType.cs" />
+    <Compile Include="classes\Models\TaskTypes.cs" />
+    <Compile Include="classes\Models\Ticket.cs" />
+    <Compile Include="classes\Models\TicketAssignee.cs" />
+    <Compile Include="classes\Models\TicketAssignments.cs" />
+    <Compile Include="classes\Models\TicketLogRecord.cs" />
+    <Compile Include="classes\Models\TicketLogRecords.cs" />
+    <Compile Include="classes\Models\UnassignedQueue.cs" />
+    <Compile Include="classes\Models\UnassignedQueues.cs" />
+    <Compile Include="classes\Models\UserAccount.cs" />
+    <Compile Include="classes\Models\UserAccounts.cs" />
+    <Compile Include="classes\Models\UserConfig.cs" />
+    <Compile Include="classes\Models\AssetsConfig.cs" />
+    <Compile Include="classes\Models\WorklistTicket.cs" />
+    <Compile Include="classes\Models\WorklistTickets.cs" />
+    <Compile Include="classes\Services\AccountsService.cs" />
+    <Compile Include="classes\Services\ClassesServices.cs" />
+    <Compile Include="classes\Services\ConfigService.cs" />
+    <Compile Include="classes\Services\ArticlesService.cs" />
+    <Compile Include="classes\Services\FreshBooksServices.cs" />
+    <Compile Include="classes\Services\TimeLogsServices.cs" />
+    <Compile Include="classes\Services\ProjectsService.cs" />
+    <Compile Include="classes\Services\TodosService.cs" />
+    <Compile Include="classes\Services\InvoicesService.cs" />
+    <Compile Include="classes\Services\TaskPostsServices.cs" />
+    <Compile Include="classes\Services\LevelsServices.cs" />
+    <Compile Include="classes\Services\LoginService.cs" />
+    <Compile Include="classes\Services\PingService.cs" />
+    <Compile Include="classes\Services\PrioritiesServices.cs" />
+    <Compile Include="classes\Services\QueuesServices.cs" />
+    <Compile Include="classes\Services\TaskTypesServices.cs" />
+    <Compile Include="classes\Services\TicketsServices.cs" />
+    <Compile Include="classes\Services\UserAccountsServices.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="vwd.webinfo" />
+    <None Include="Properties\PublishProfiles\sherpadeskapi - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\sherpadeskapi - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\sherpadeskapi - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\sherpadeskapi - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\sherpadeskapibeta - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\sherpadeskapibeta - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28559</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:18013/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

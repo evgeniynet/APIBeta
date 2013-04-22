@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATmAPY40+gEasXd2/iVV7LgAAAAACAAAAAAAQZgAAAAEAACAAAACu9fwtBznCOJ7aT2sJFgFgOqQMGdtlfzluMs/Io6iQLQAAAAAOgAAAAAIAACAAAAClxu49w07iGKp6UVnpb2kapLRsGRrzPLDLoKFi3zpn84AAAADST0VR1AwnyDDyebr/yL1rwbMvFHzTvLbqdzEZ0UNfO2nXZIHJdSU9uIllomdysnW/RzVefKh2UrgP19QOH5qgUfT3OCgGDLY9pPxpwLENcVZUdja63Z/4K9PYVTrJuhPp6cwXIV1ZE0WHfiK7CYkAlxiW3U8LHfx0O9RIspZ/wkAAAADPgr6Ww9mgq2lumpnNdeRY3rx2Ea1oMFzNYGvhCZvS/1loF4bevBulbIV+5Vh1N5yoQmHnAPuq4R6KDbHSaw19</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ChargifyNET.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.Core.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.RelyingParty.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/Google.GData.Apps.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/Google.GData.Client.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/Google.GData.Extensions.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/lib.bwa.bigWebDesk.bll.dll">
+      <publishTime>03/29/2013 16:18:45</publishTime>
+    </File>
+    <File Include="bin/lib.bwa.bigWebDesk.dal.dll">
+      <publishTime>03/20/2013 16:13:28</publishTime>
+    </File>
+    <File Include="bin/Micajah.Common.LdapAdapter.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/Micajah.Common3.dll">
+      <publishTime>03/28/2013 17:44:25</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ObjectBuilder.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/NCI.EasyObjects.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Common.dll">
+      <publishTime>03/26/2013 18:17:11</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.dll">
+      <publishTime>03/27/2013 14:52:50</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Interfaces.dll">
+      <publishTime>03/26/2013 18:17:11</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.ServiceInterface.dll">
+      <publishTime>03/26/2013 18:17:11</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Text.dll">
+      <publishTime>03/26/2013 18:17:11</publishTime>
+    </File>
+    <File Include="bin/SherpaDeskApi.dll">
+      <publishTime>04/01/2013 13:21:16</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>03/15/2013 12:41:43</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="vwd.webinfo">
+      <publishTime>03/15/2013 12:41:42</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/01/2013 13:21:23</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
