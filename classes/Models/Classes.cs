@@ -17,6 +17,7 @@ namespace BWA.bigWebDesk.Api.Models
 
         public static List<Class> UserClasses(Guid OrgId, int DeptId, int UserId)
         {
+            
             DataTable dtClasses = bigWebApps.bigWebDesk.Data.Classes.SelectByInactiveStatus(OrgId, DeptId, UserId, bigWebApps.bigWebDesk.Data.InactiveStatus.Active);
             Classes _classes = new Classes(dtClasses);
             return MakeTreeFromFlatList(_classes.List);
