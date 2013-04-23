@@ -1,18 +1,84 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib.bwa.bigWebDesk.bll", "datalayer\BLL\lib.bwa.bigWebDesk.bll.csproj", "{F9957293-9305-4500-9888-E40E85618FF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib.bwa.bigWebDesk.dal", "datalayer\DAL\lib.bwa.bigWebDesk.dal.csproj", "{45543C60-3931-4EAF-9CFD-2420F5709EC0}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SherpaDeskApi", "SherpaDeskApi.csproj", "{342A3B1F-D884-4A51-A031-313AC0D56EBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bin Shared", "Bin Shared", "{2884E49E-BE33-48E3-B629-4E82B26B5C1D}"
+	ProjectSection(SolutionItems) = preProject
+		bin shared\ChargifyNET.dll = bin shared\ChargifyNET.dll
+		bin shared\DotNetOpenAuth.Core.dll = bin shared\DotNetOpenAuth.Core.dll
+		bin shared\DotNetOpenAuth.OpenId.dll = bin shared\DotNetOpenAuth.OpenId.dll
+		bin shared\DotNetOpenAuth.OpenId.RelyingParty.dll = bin shared\DotNetOpenAuth.OpenId.RelyingParty.dll
+		bin shared\EPPlus.dll = bin shared\EPPlus.dll
+		bin shared\Google.GData.Apps.dll = bin shared\Google.GData.Apps.dll
+		bin shared\Google.GData.Client.dll = bin shared\Google.GData.Client.dll
+		bin shared\Google.GData.Extensions.dll = bin shared\Google.GData.Extensions.dll
+		bin shared\lib.bwa.bigWebDesk.bll.dll = bin shared\lib.bwa.bigWebDesk.bll.dll
+		bin shared\lib.bwa.bigWebDesk.dal.dll = bin shared\lib.bwa.bigWebDesk.dal.dll
+		bin shared\Micajah.Common.LdapAdapter.dll = bin shared\Micajah.Common.LdapAdapter.dll
+		bin shared\Micajah.Common3.dll = bin shared\Micajah.Common3.dll
+		bin shared\Micajah.FileService.dll = bin shared\Micajah.FileService.dll
+		bin shared\Microsoft.Practices.EnterpriseLibrary.Common.dll = bin shared\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		bin shared\Microsoft.Practices.EnterpriseLibrary.Data.dll = bin shared\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		bin shared\Microsoft.Practices.ObjectBuilder.dll = bin shared\Microsoft.Practices.ObjectBuilder.dll
+		bin shared\NCI.EasyObjects.dll = bin shared\NCI.EasyObjects.dll
+		bin shared\Newtonsoft.Json.dll = bin shared\Newtonsoft.Json.dll
+		bin shared\ServiceStack.Common.dll = bin shared\ServiceStack.Common.dll
+		bin shared\ServiceStack.dll = bin shared\ServiceStack.dll
+		bin shared\ServiceStack.Interfaces.dll = bin shared\ServiceStack.Interfaces.dll
+		bin shared\ServiceStack.ServiceInterface.dll = bin shared\ServiceStack.ServiceInterface.dll
+		bin shared\ServiceStack.Text.dll = bin shared\ServiceStack.Text.dll
+		bin shared\SherpaDeskApi.dll = bin shared\SherpaDeskApi.dll
+		bin shared\System.Net.Http.dll = bin shared\System.Net.Http.dll
+		bin shared\Telerik.Web.UI.dll = bin shared\Telerik.Web.UI.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib.bwa.bigWebDesk.LinqBll", "datalayer\BLL Linq\lib.bwa.bigWebDesk.LinqBll.csproj", "{D267F4DC-F1B6-40F1-BD5D-96CEA72FD123}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		bigWebDesk Debug|Any CPU = bigWebDesk Debug|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		SignUp Debug|Any CPU = SignUp Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9957293-9305-4500-9888-E40E85618FF3}.bigWebDesk Debug|Any CPU.ActiveCfg = bigWebDesk Debug|Any CPU
+		{F9957293-9305-4500-9888-E40E85618FF3}.bigWebDesk Debug|Any CPU.Build.0 = bigWebDesk Debug|Any CPU
+		{F9957293-9305-4500-9888-E40E85618FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9957293-9305-4500-9888-E40E85618FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9957293-9305-4500-9888-E40E85618FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9957293-9305-4500-9888-E40E85618FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9957293-9305-4500-9888-E40E85618FF3}.SignUp Debug|Any CPU.ActiveCfg = SignUp Debug|Any CPU
+		{F9957293-9305-4500-9888-E40E85618FF3}.SignUp Debug|Any CPU.Build.0 = SignUp Debug|Any CPU
+		{45543C60-3931-4EAF-9CFD-2420F5709EC0}.bigWebDesk Debug|Any CPU.ActiveCfg = bigWebDesk Debug|Any CPU
+		{45543C60-3931-4EAF-9CFD-2420F5709EC0}.bigWebDesk Debug|Any CPU.Build.0 = bigWebDesk Debug|Any CPU
+		{45543C60-3931-4EAF-9CFD-2420F5709EC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45543C60-3931-4EAF-9CFD-2420F5709EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45543C60-3931-4EAF-9CFD-2420F5709EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45543C60-3931-4EAF-9CFD-2420F5709EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45543C60-3931-4EAF-9CFD-2420F5709EC0}.SignUp Debug|Any CPU.ActiveCfg = SignUp Debug|Any CPU
+		{45543C60-3931-4EAF-9CFD-2420F5709EC0}.SignUp Debug|Any CPU.Build.0 = SignUp Debug|Any CPU
+		{342A3B1F-D884-4A51-A031-313AC0D56EBC}.bigWebDesk Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{342A3B1F-D884-4A51-A031-313AC0D56EBC}.bigWebDesk Debug|Any CPU.Build.0 = Debug|Any CPU
 		{342A3B1F-D884-4A51-A031-313AC0D56EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{342A3B1F-D884-4A51-A031-313AC0D56EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{342A3B1F-D884-4A51-A031-313AC0D56EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{342A3B1F-D884-4A51-A031-313AC0D56EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{342A3B1F-D884-4A51-A031-313AC0D56EBC}.SignUp Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{342A3B1F-D884-4A51-A031-313AC0D56EBC}.SignUp Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D267F4DC-F1B6-40F1-BD5D-96CEA72FD123}.bigWebDesk Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D267F4DC-F1B6-40F1-BD5D-96CEA72FD123}.bigWebDesk Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D267F4DC-F1B6-40F1-BD5D-96CEA72FD123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D267F4DC-F1B6-40F1-BD5D-96CEA72FD123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D267F4DC-F1B6-40F1-BD5D-96CEA72FD123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D267F4DC-F1B6-40F1-BD5D-96CEA72FD123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D267F4DC-F1B6-40F1-BD5D-96CEA72FD123}.SignUp Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D267F4DC-F1B6-40F1-BD5D-96CEA72FD123}.SignUp Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

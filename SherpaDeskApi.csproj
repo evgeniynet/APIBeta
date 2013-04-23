@@ -39,41 +39,35 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="lib.bwa.bigWebDesk.bll, Version=10.2.1.3535, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\lib.bwa.bigWebDesk.bll.dll</HintPath>
+    <Reference Include="Google.GData.Apps">
+      <HintPath>bin shared\Google.GData.Apps.dll</HintPath>
     </Reference>
-    <Reference Include="lib.bwa.bigWebDesk.dal, Version=10.2.1.3535, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\lib.bwa.bigWebDesk.dal.dll</HintPath>
+    <Reference Include="Google.GData.Client">
+      <HintPath>bin shared\Google.GData.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Micajah.Common3, Version=3.0.4746.30644, Culture=neutral, PublicKeyToken=045979187a9f4eec, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin Shared\Micajah.Common3.dll</HintPath>
+    <Reference Include="Google.GData.Extensions">
+      <HintPath>bin shared\Google.GData.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Micajah.FileService, Version=1.0.4839.23551, Culture=neutral, PublicKeyToken=db54874c27934326, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Micajah.FileService.dll</HintPath>
+    <Reference Include="Micajah.Common3">
+      <HintPath>bin shared\Micajah.Common3.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack, Version=3.9.42.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\ServiceStack.dll</HintPath>
+    <Reference Include="Micajah.FileService">
+      <HintPath>bin shared\Micajah.FileService.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack.Common, Version=3.9.42.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\ServiceStack.Common.dll</HintPath>
+    <Reference Include="ServiceStack">
+      <HintPath>bin shared\ServiceStack.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack.Interfaces, Version=3.9.42.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\ServiceStack.Interfaces.dll</HintPath>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>bin shared\ServiceStack.Common.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack.ServiceInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\ServiceStack.ServiceInterface.dll</HintPath>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>bin shared\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack.Text, Version=3.9.42.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\ServiceStack.Text.dll</HintPath>
+    <Reference Include="ServiceStack.ServiceInterface">
+      <HintPath>bin shared\ServiceStack.ServiceInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>bin shared\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
@@ -188,6 +182,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="datalayer\BLL\lib.bwa.bigWebDesk.bll.csproj">
+      <Project>{f9957293-9305-4500-9888-e40e85618ff3}</Project>
+      <Name>lib.bwa.bigWebDesk.bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="datalayer\DAL\lib.bwa.bigWebDesk.dal.csproj">
+      <Project>{45543c60-3931-4eaf-9cfd-2420f5709ec0}</Project>
+      <Name>lib.bwa.bigWebDesk.dal</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
