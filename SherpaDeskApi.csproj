@@ -48,6 +48,14 @@
     <Reference Include="Google.GData.Extensions">
       <HintPath>bin shared\Google.GData.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="lib.bwa.bigWebDesk.bll, Version=10.2.1.3535, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin shared\lib.bwa.bigWebDesk.bll.dll</HintPath>
+    </Reference>
+    <Reference Include="lib.bwa.bigWebDesk.dal, Version=10.2.1.3535, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin shared\lib.bwa.bigWebDesk.dal.dll</HintPath>
+    </Reference>
     <Reference Include="Micajah.Common3">
       <HintPath>bin shared\Micajah.Common3.dll</HintPath>
     </Reference>
@@ -182,16 +190,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="datalayer\BLL\lib.bwa.bigWebDesk.bll.csproj">
-      <Project>{f9957293-9305-4500-9888-e40e85618ff3}</Project>
-      <Name>lib.bwa.bigWebDesk.bll</Name>
-    </ProjectReference>
-    <ProjectReference Include="datalayer\DAL\lib.bwa.bigWebDesk.dal.csproj">
-      <Project>{45543c60-3931-4eaf-9cfd-2420f5709ec0}</Project>
-      <Name>lib.bwa.bigWebDesk.dal</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -6,6 +6,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib.bwa.bigWebDesk.dal", "datalayer\DAL\lib.bwa.bigWebDesk.dal.csproj", "{45543C60-3931-4EAF-9CFD-2420F5709EC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SherpaDeskApi", "SherpaDeskApi.csproj", "{342A3B1F-D884-4A51-A031-313AC0D56EBC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{45543C60-3931-4EAF-9CFD-2420F5709EC0} = {45543C60-3931-4EAF-9CFD-2420F5709EC0}
+		{F9957293-9305-4500-9888-E40E85618FF3} = {F9957293-9305-4500-9888-E40E85618FF3}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bin Shared", "Bin Shared", "{2884E49E-BE33-48E3-B629-4E82B26B5C1D}"
 	ProjectSection(SolutionItems) = preProject
