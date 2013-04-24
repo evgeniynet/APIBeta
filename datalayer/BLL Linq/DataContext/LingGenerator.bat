@@ -1,1 +1,0 @@
-call "C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin\SqlMetal.exe" /conn:"Data Source=(local);Initial Catalog=BWD_Mc3Dev;Persist Security Info=True;Integrated Security=True;"  /map:LinqDB.xml /code:LinqDB.cs /namespace:lib.bwa.bigWebDesk.LinqBll.Context /context:LinqDBDataContext /views /sprocs /functions
