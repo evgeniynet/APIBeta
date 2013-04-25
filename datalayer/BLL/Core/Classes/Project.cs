@@ -329,7 +329,7 @@ namespace bigWebApps.bigWebDesk.Data
 			else _params[3].Value = DBNull.Value;
 			_params[4] = new SqlParameter("@Date", Date);
 			_params[5] = new SqlParameter("@Hours", Hours);
-			_params[6] = new SqlParameter("@Note", SqlDbType.VarChar);
+			_params[6] = new SqlParameter("@Note", SqlDbType.NVarChar);
 			if (!String.IsNullOrEmpty(Note)) _params[6].Value = Note;
 			else _params[6].Value = DBNull.Value;
 			_params[7] = new SqlParameter("@StartTime", SqlDbType.SmallDateTime);
@@ -370,7 +370,7 @@ namespace bigWebApps.bigWebDesk.Data
 			else _params[4].Value = DBNull.Value;
 			_params[5] = new SqlParameter("@Date", Date);
 			_params[6] = new SqlParameter("@Hours", Hours);
-			_params[7] = new SqlParameter("@Note", SqlDbType.VarChar);
+			_params[7] = new SqlParameter("@Note", SqlDbType.NVarChar);
 			if (!String.IsNullOrEmpty(Note)) _params[7].Value = Note;
 			else _params[7].Value = DBNull.Value;
 			_params[8] = new SqlParameter("@StartTime", SqlDbType.SmallDateTime);
@@ -560,11 +560,11 @@ namespace bigWebApps.bigWebDesk.Data
 			if (dtNextDate > DateTime.MinValue) _params[7].Value = dtNextDate;
 			else _params[7].Value = DBNull.Value;
 
-			_params[8] = new SqlParameter("@QBAccountAlias", SqlDbType.VarChar);
+			_params[8] = new SqlParameter("@QBAccountAlias", SqlDbType.NVarChar);
 			if (String.IsNullOrEmpty(sQBAccount)) _params[8].Value = DBNull.Value;
 			else _params[8].Value = sQBAccount;
 
-			_params[9] = new SqlParameter("@QBItemAlias", SqlDbType.VarChar);
+			_params[9] = new SqlParameter("@QBItemAlias", SqlDbType.NVarChar);
 			if (String.IsNullOrEmpty(sQBItem)) _params[9].Value = DBNull.Value;
 			else _params[9].Value = sQBItem;
 			UpdateData("sp_UpdateProjectBillableRates", _params);
@@ -1022,7 +1022,12 @@ namespace bigWebApps.bigWebDesk.Data
             UpdateData("sp_UpdateProjectUser", _params);
         }
 
-        public static DataTable SelectDayTimeProjectNotes(int companyID, int accountID, int projectID, DateTime date, int userID)
+        public static DataTable SelectDayTimeProjectNotes( int companyID, int accountID, int projectID, DateTime date, int userID)
+        {
+           return SelectDayTimeProjectNotes(Guid.Empty, companyID, accountID, projectID, date, userID);
+        }
+
+        public static DataTable SelectDayTimeProjectNotes(Guid orgId, int companyID, int accountID, int projectID, DateTime date, int userID)
         {
             return SelectRecords("sp_SelectDayTimeProjectNotes", new SqlParameter[]
                    {
@@ -1031,7 +1036,7 @@ namespace bigWebApps.bigWebDesk.Data
                     new SqlParameter("@ProjectID", projectID),
                     new SqlParameter("@Date", date),
                     new SqlParameter("@UserId", userID)
-                   });
+                   },orgId);
         }        
         
         
