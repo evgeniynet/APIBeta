@@ -45,8 +45,8 @@ namespace BWA.bigWebDesk.Api.Services
                 return TicketTimeLogs.GetTicketTimeLogs(hdUser.OrganizationId, hdUser.DepartmentId, Ticket.GetId(hdUser.OrganizationId, hdUser.DepartmentId, request.ticket), request.ticket, request.page, request.limit);
 
             if (!string.IsNullOrEmpty(request.type) &&
-                (request.type.ToLower() == "recent" || request.type.ToLower() == "linked_fb") || request.type.ToLower() == "unlinked_fb"
-                || request.type.ToLower() == "invoiced" || request.type.ToLower() == "not_invoiced")
+                ((request.type.ToLower() == "recent" || request.type.ToLower() == "linked_fb") || request.type.ToLower() == "unlinked_fb"
+                || request.type.ToLower() == "invoiced" || request.type.ToLower() == "not_invoiced"))
             {
                 int accountID = 0;
                 int projectID = 0;
@@ -66,7 +66,7 @@ namespace BWA.bigWebDesk.Api.Services
                 return Models.CommonTimeLogs.GetCommonTimeLog(hdUser.OrganizationId, hdUser.DepartmentId, request.type.ToLower(), accountID, projectID, techID, request.page, request.limit);
             }
 
-            if (request.project.HasValue)
+            if (!request.project.HasValue)
                 throw new HttpError(HttpStatusCode.NotFound, "Incorrect project id");
 
             ProjectDetail projectDetail = Models.Projects.GetProjectDetails(hdUser.OrganizationId, hdUser.DepartmentId, request.project.Value);
